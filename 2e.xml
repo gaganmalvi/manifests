@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <include name="base-q.xml"/>
+
+  <remote fetch="https://github.com/2e-dev" name="2e-dev"/>
+  <remote fetch="https://github.com/gaganmalvi" name="malvi"/>
+  <remote fetch="https://github.com/LineageOS" name="los"/>
+
+  <!-- Teracube 2e -->
+  <project path="device/teracube/2e" name="android_device_teracube_2e" remote="2e-dev" revision="gonk-2e" />
+  <project path="kernel/teracube/2e" name="android_kernel_teracube_2e" remote="2e-dev" revision="q-release" />
+  <project path="vendor/teracube/2e" name="android_vendor_teracube_2e" remote="2e-dev" revision="q-release" />
+  <project path="device/mediatek/sepolicy" name="android_device_mediatek_sepolicy" remote="2e-dev" revision="q-release" />
+
+  <project path="patcher" name="gonk-patcher" remote="malvi" revision="master" />
+  <project path="vendor/lineage" name="android_vendor_lineage" remote="los" revision="lineage-17.1"/>
+
+</manifest>
